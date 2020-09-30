@@ -9,6 +9,17 @@
 
 function sum(arr) {
   // Your code here
+  let sum = 0;
+  arr.forEach(function(number){
+  	if(typeof number !== "number"){
+  		return undefined;
+  	}
+
+  	sum+= number;
+  });
+
+
+  return sum;
 }
 
 // Part 2 - Test

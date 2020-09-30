@@ -13,6 +13,23 @@
 
 function repeat(arr) {
   // Your code here
+	if (typeof arr[0] !== "string" || typeof arr[1] !== "number") {
+		return undefined;
+	}
+
+	if(arr[1] <= 0){
+		return "";
+	}
+
+	let result = "";
+
+	for (let i = 0; i < arr[1]; i++) {
+		result = result.concat(arr[0]); 
+	}
+
+	return result;
+
+
 }
 
 // Part 2 - Test

@@ -10,6 +10,12 @@
 
 function lastCharacter(str) {
   // Your code here
+  if (typeof str !== "string" || str.slice(-1) === "") {
+    return undefined;
+  }
+
+
+  return str.slice(-1);
 }
 
 // Part 2 - Test
